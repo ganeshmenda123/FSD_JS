@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String_methods</title>
+</head>
+<body>
+	<!--script type="text/javascript">
+		let str ='drive ready';
+		document.write(typeof(str))
+		document.write("<br>")
+		let str1 = new String('ganesh');
+		document.write(typeof(str1))
+		document.write("<br>")
+		let str2 ='menda ganesh';
+		document.write("<b>"+str2+"</b>")
+	</script-->
+	<table border="1px">
+		<tr>
+			<td>g</td>
+			<td>a</td>
+			<td>n</td>
+			<td>e</td>
+			<td>s</td>
+			<td>h</td>
+			<td>&nbsp;</td>
+			<td>m</td>
+			<td>e</td>
+			<td>n</td>
+			<td>d</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let str = 'menda ganesh';
+		function s(str_name){
+			document.write("<b>"+str_name+"</b><br>")
+		}
+		s("original String= "+str)
+		s("String length= "+str.length)
+		s("String length= "+s[4])
+		s("Char At method= "+str.charAt(6))  //character at position 3.output:n
+		//inndex of method
+		s("Index of= "+str.indexOf('h'))
+		s("Last Index of= "+str.lastIndexOf('s'))
+		//trime() method
+		let str1=' ganesh';
+		s('Trim method= '+str1.trim())//remove the spaces from left ti right
+		//lowre case
+		let str2='MENDA';
+		s("lower Case= "+str2.toLowerCase())
+		//upper case
+		let str3='gana';
+		s("Upper Case= "+str3.toUpperCase())
+		//concatenation
+		let str4='menda';
+		let str5='ganesh';
+		let str6='kumar'
+		s("concat String= "+str4.concat(str5,str6))
+		let srt8='fsd drive ready batch';
+
+		// includes()=> return boolean value
+		s("Includes method= "+srt8.includes('batch'))//true
+		s("Includes method= "+srt8.includes('afeternoon'))
+
+		//converting string into an array =>split()
+		let str9='ganesh';
+		s("Split method= "+str9.split(''))
+		let str10 ='ganesh&nivas,veera'
+		console.log(str10.split('&'))//string divides by based on deliminator "&"
+		console.log(str10.split(","))//string divides by based on deliminator ","
+
+		//startsWith
+		let str11='senker';
+		s("Starts With= "+str11.startsWith("h"))//false
+		s("Starts With= "+str11.startsWith("s"))//true
+
+		//endswith
+		let str12='sekhaer'
+		s("Ends With= "+str12.endsWith('s'))//false
+		s("Ends With= "+str12.endsWith('r'))//true
+		//slice method
+		//stringname.slice('startpos,endpos-1')
+		s("slice method= "+str.slice(1,4))
+		s("slice method= "+str.slice(-1))
+		//substringmethod
+		//it allows only positive indexes
+		s("slice method= "+str.substring(1,4))//=(1,4-1)=1,3
+		s("slice method= "+str.substring(4,1))//4,1=1,4
+		s("slice method= "+str.substring(-1))//complete string will come
+
+		//substr method=substr(starpos,length of the charcters from 1st arg position)
+		s("substr method= "+str.substr(1,4))
+		s("substr method= "+str.substr(1,6))
+
+	</script>
+</body>
+</html>

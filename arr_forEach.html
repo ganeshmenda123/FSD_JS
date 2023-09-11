@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array methods|forEach</title>
+</head>
+<body>
+<p>This method not create any new array and return it after iteration wil completed.</p>
+<script type="text/javascript">
+	let salaries=[100000,25000,50000];
+	console.log(salaries);
+	salaries.forEach(function(amount,index,arr){
+		var increnment = amount/10;
+		arr[index] = amount + increnment;
+	});
+	console.log()
+</script>
+</body>
+</html>

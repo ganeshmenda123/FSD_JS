@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>regular|expression</title>
+</head>
+<body>
+	<h2>regular expression</h2>
+	<input type="text" name="" id="id_in">
+	<!--button onclick="check_numornot()">check validity</button-->
+	<br>
+	<button onclick="check_characters()">check char validity</button>
+	<br>
+	<span id="msg_id"></span>
+	<script type="text/javascript">
+		function check_numornot(){
+		re = /^[0-9]{10}$/
+		let n = document.getElementById('id_in').value;
+		output= re.test(n);
+		if(output== true){
+			document.getElementById('msg_id').innerText='correct';
+			document.getElementById('msg_id').style.color='green';
+		}else{
+			document.getElementById('msg_id').innerText='please enter correct format';
+			document.getElementById('msg_id').style.color='red'
+		}
+	}
+	function check_characters(){
+		//re = /^[a-z]+$/ //only small letters
+		//re = /^[A-Z]+$/ //only big letters
+		//re = /^[a-zA-Z]+$/ //small and big letters
+		//re = /^[a-zA-Z0-9]+$/ //alpha numeric characters
+		re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/ //gmali 
+		let n = document.getElementById('id_in').value;
+		output= re.test(n);
+		if(output== true){
+			document.getElementById('msg_id').innerText='correct';
+			document.getElementById('msg_id').style.color='green';
+		}else{
+			document.getElementById('msg_id').innerText='please enter correct format';
+			document.getElementById('msg_id').style.color='red'
+		}
+	}
+	</script>
+</body>
+</html>

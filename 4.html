@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let input = prompt("Enter eleemnts with commas");
+	let array = input.split(",");
+	let evensum=0;
+	let oddsum=0;
+	for(let i =0;i<array.length;i++){
+		if(parseInt(array[i])%2==0){
+			evensum+=parseInt(array[i])
+		}
+		else{
+			oddsum+=parseInt(array[i])
+		}
+	}
+	document.write("Even Numbers Sum in Given Arrays is: "+evensum)
+	document.write("<br>")
+	document.write("Odd Numbers Sum in Given Arrays is: "+oddsum);
+
+</script>
+</body>
+</html>

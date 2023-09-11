@@ -1,0 +1,119 @@
+<!--DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+//----types of conversion = change the datatype of a value to another(string,number,booleans)
+// -----string is nothing but a serices of a characters
+		/*var username=window.prompt("what's your name?")
+		console.log(username)
+		let age=window.prompt("how old are you?");
+		age=Number(age);
+		age+=1;
+		console.log("happy birthday! you are",age,"years old");
+		let x;
+		let y;
+		let z;
+		x=Number("");
+		y=String(3.24);
+		z=Boolean("pizza");
+		console.log(x,typeof x);
+		console.log(y,typeof y);
+		console.log(z,typeof z);*/
+
+//-----const = a variable that can't be changed
+		/*let name='gana',roll_number=445,gander="male";
+		document.write(name+"<br>"+roll_number+"<br>"+gander) 
+		let names=window.prompt("my name is ");
+		console.log("my name is :",names);*/
+
+//------math ==an intrinsic object that provides basic mathematics functionality and constants
+		/*var x = 3.14;
+		var y=5;
+		var z= 9;
+		var maximum;
+		var minimun;
+		let minimum=window.prompt("minimum value is ")
+		maximum = Math.max(x,y,z);
+		minimum=Math.min(x,y,z);
+		x = Math.round(x);
+		x=Math.floor(x);
+		x=Math.ceil(x);
+		x=Math.pow(x,3);
+		x=Math.sqrt(x);
+		x=Math.abs(x);
+		console.log(maximum);
+		console.log(minimum);*/
+
+		let a;
+		let b;
+		let c;
+		a=window.prompt("enter a value:");
+		a= Number(a);
+		b=window.prompt("enter b value:");
+		b=Number(b);
+		c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+		console.log("value of c:",c);
+
+	</script>
+</body>
+</html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jvaascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var datiles=[{
+			name:"gana",
+			roll_number:"n40",
+			branch:"ECE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			},
+			{
+				name:"niav",
+				roll_number:"j50",
+				branch:"EE",
+			}
+			]
+			for (var i = 0; i < datiles.length; i++) {
+				document.write(i+1+". ")
+				for(key in datiles[i]){
+					document.write(" "+datiles[i][key]+" ")
+				}
+				document.write("<br>")
+			}
+	</script>
+</body>
+</html>

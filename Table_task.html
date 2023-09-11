@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table_task</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+    .main{
+      background-color: whitesmoke;
+      height: 500px;
+      width: 500px;
+      margin-left: 400px;
+    }
+  .a{
+  		background-color: white;
+  		color: red;
+  		border-color: white;
+  	}
+  	.c{
+  		background-color: white;
+  		color: blue;
+  		border-color: white;
+  	}
+  	h1{
+  		display: inline;
+  	}
+  	.b{
+  		border-radius: 10px;
+  		background-color: lightblue;
+  		border-color: black;
+  		color: white;
+      height: 20px;
+      width: 100px;
+  	}
+  </style>
+</head>
+<body>
+  <div class="main">
+  <center>
+	<h1>Product Details</h1>
+  <button onclick="addRow()" class="b">+ Add Row</button><br><br>
+  <table id="table_id" border=" " cellspacing="0" cellpadding="10px">
+      <tr>
+        <th>Product_id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    <tbody>
+      <tr>
+        <td>09876</td>
+        <td>oppo mobial</td>
+        <td>25000</td>
+        <td>
+          <button onclick="editRow(this)" class="c"><i class="fa-solid fa-pen"></i></button>&nbsp;&nbsp;<button onclick="deleteRow(this)" class="a"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td>54321</td>
+        <td>Mi mobile</td>
+        <td>30000</td>
+        <td>
+          <button onclick="editRow(this)" class="c"><i class="fa-solid fa-pen"></i></button>&nbsp;&nbsp;<button onclick="deleteRow(this)" class="a"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td>65748</td>
+        <td>realme mobile</td>
+        <td>35000</td>
+        <td>
+          <button onclick="editRow(this)" class="c"><i class="fa-solid fa-pen"></i></button>&nbsp;&nbsp;<button onclick="deleteRow(this)" class="a"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function addRow() {
+      var table = document.getElementById("table_id").getElementsByTagName('tbody')[0];
+      var newRow = table.insertRow(table.rows.length);
+
+      var cell_1 = newRow.insertCell(0);
+      var cell_2 = newRow.insertCell(1);
+      var cell_3 = newRow.insertCell(2);
+      var cell_4 = newRow.insertCell(3);
+
+      cell_1.innerHTML = "New id";
+      cell_2.innerHTML = "New name";
+      cell_3.innerHTML = "price";
+      cell_4.innerHTML = '<button class="bb" onclick="editRow(this)"><i class="fa-solid fa-pen"></i></button>&nbsp;&nbsp;<button onclick="deleteRow(this)" class="aa"><i class="fa-solid fa-trash"></i></button>';
+    }
+    function editRow(button) {
+      var row = button.parentNode.parentNode;
+      var cells = row.getElementsByTagName("td");
+      var productid = cells[0].innerHTML;
+      var name = cells[1].innerHTML;
+      var prize= cells[2].innerHTML;
+
+      var newproductid = prompt("Enter New Name:", productid);
+      var newname = prompt("Enter New Age:", name);
+      var newprize = prompt("Enter New Prize:", prize);
+
+      if (newproductid !== null && newname !== null && newprize !== null) {
+        cells[0].innerHTML = newproductid;
+        cells[1].innerHTML = newname;
+        cells[2].innerHTML = newprize;
+      }
+    }
+
+    function deleteRow(button) {
+      var row = button.parentNode.parentNode;
+      if(confirm("you want to delete IT?..")){
+      row.parentNode.removeChild(row);
+          }
+    }
+  </script>
+</center>
+</div>
+</body>
+</html>

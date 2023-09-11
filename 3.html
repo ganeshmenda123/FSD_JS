@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program-3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function checkVariable(variable) {
+		    if(variable == null) {
+		        document.write('The variable is undefined or null'+"<br>");
+		    }
+		    else {
+		       document.write('The variable is neither undefined nor null'+"<br>");
+		    }
+		}
+		let newVariable;
+		checkVariable(5);
+		checkVariable('hello');
+		checkVariable(null);
+		checkVariable(newVariable);
+	</script>
+</body>
+</html>

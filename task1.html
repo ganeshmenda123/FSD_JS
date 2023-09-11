@@ -1,0 +1,117 @@
+<!--DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tesk</title>
+</head>
+<body>
+	<table border="1" cellpadding="5px">
+		<tr>
+			<th>course name</th>
+			<th>course number</th>
+			<th>course fee</th>
+			<th>place</th>
+		</tr>
+		<tbody id="bodyid"></tbody>
+		<script type="text/javascript">
+			var course=[{
+				name:'html',
+				number:'123',
+				fees:'100',
+				place:'fsd'
+
+			},
+			{
+				name:'css',
+				number:'456',
+				fees:'200',
+				place:'fsd'
+
+			},
+			{
+				name:'js',
+				number:'789',
+				fees:'300',
+				place:'fsd'
+
+			},]
+			for (var i = 0; i < course.length; i++) {
+				let tr=document.createElement('tr');
+				let td1=document.createElement('td')
+				let td2=document.createElement('td')
+				let td3=document.createElement('td')
+				let td4=document.createElement('td')
+				td1.innerText=course[i].name
+				td2.innerText=course[i].number
+				td3.innerText=course[i].fees
+				td4.innerText=course[i].place
+				tr.append(td1)
+				tr.append(td2)
+				tr.append(td3)
+				tr.append(td4)
+				document.getElementById('bodyid').append(tr)
+
+			}
+
+
+		</script>
+	</table>
+</body>
+</html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table border="1" cellpadding="5px">
+		<tr>
+			<td>name</td>
+			<td>roll_no</td>
+			<td>branch</td>
+			<td>college_name</td>
+		</tr>
+		<tbody id="a"></tbody>
+		<script type="text/javascript">
+			var datiles=[{
+				name:'gana',
+				roll_no:'4n0',
+				branch:'ece',
+				college:'acet'
+			},
+			{
+				name:'gana',
+				roll_no:'4n0',
+				branch:'ece',
+				college:'acet'
+			},
+			{
+				name:'gana',
+				roll_no:'4n0',
+				branch:'ece',
+				college:'acet'
+			},
+			]
+			for (var i = 0; i < datiles.length; i++) {
+				let tr=document.createElement('tr')
+				let td1=document.createElement('td')
+				let td2=document.createElement('td')
+				let td3=document.createElement('td')
+				let td4=document.createElement('td')
+				td1.innetText=datiles[i].name
+				td2.innetText=datiles[i].roll_no
+				td3.innetText=datiles[i].branch
+				td4.innetText=datiles[i].college
+				tr.append(td1)
+				tr.append(td2)	
+				tr.append(td3)	
+				tr.append(td4)
+				document.getElementById('a').append(tr)
+			}
+		</script>
+	</table>
+</body>
+</html>

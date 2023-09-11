@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String methods</title>
+</head>
+<body>
+	<h1>string methods</h1>
+	<script type="text/javascript">
+		let str="ganesh menda"
+		function n(str_name){
+			document.write(str_name)
+		}
+		let str1=' ganesh ';
+		n('Trim method= '+str1.trim()+"<br>")
+		//--lowrecase
+		let str2='MENDA';
+		n("lower Case= "+str2.toLowerCase()+"<br>")
+		//---uppercase
+		let str3='gana';
+		n("Upper Case= "+str3.toUpperCase()+"<br>")
+		//arr of concat
+		n("concate string="+str.concat(str3)+"<br>");
+		//----concatenation
+		let str4='menda';
+		let str5='ganesh';
+		let str6='kumar'
+		n("concat String= "+str4.concat(str5,str6)+"<br>")
+		let str7="ganesh"
+		//trim method
+		n("Trim method="+str7.trim()+"<br>")
+		let str8='fsd drive ready batch';
+		// includes
+		n("Includes method= "+str8.includes('nivas')+"<br>")
+		n("Includes method= "+str8.includes('veera')+"<br>")
+		// arr of index
+		n("Index of="+str8.indexOf('h')+"<br>")
+		//last indexof 
+		n(" Last Index of="+str8.lastIndexOf('l')+"<br>")
+		//split()
+		let str9='ganesh';
+		n("Split method= "+str9.split('')+"<br>")
+		//arr of charAt
+		n("Char At method="+str9.charAt(2)+"<br>" );
+		//slice method
+		n("slice method= "+str.slice(1,8)+"<br>")
+		n("slice method= "+str.slice(-1)+"<br>")
+		//substringmethod
+		n("substring= "+str.substring(1,6)+"<br>")
+		n("substring= "+str.substring(5,1)+"<br>")
+		n("substring= "+str.substring(-4)+"<br>")
+		//substr method
+		n("substr method= "+str.substr(1,4)+"<br>")
+		n("substr method= "+str.substr(1,6)+"<br>")
+		let str10='ganesh kumar';
+		//valueOf
+	    n("valueof method="+str10.valueOf( )+"<br>")
+	    //tostring
+	    n("tostring method="+str10.toString( ))
+	    //charCodeAt
+	    n("charcodeat="+str10.charCodeAt('w')+"<br>")
+	    //match
+      	n("match method="+str10.match("ll")+"<br>")
+		let str11='full stack';
+		//split method
+		n("split method="+str11.split("")+"<br>")
+		//replace method
+	    n("replace method="+str11.replace("full","Microsoft")+"<br>");
+	    //scarch method
+	    n("search method="+str11.search("u")+"<br>")
+	</script>
+</body>
+</html>

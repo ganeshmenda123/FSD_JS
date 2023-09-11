@@ -1,0 +1,50 @@
+<!--***for loop =repeat some code a certain amount times
+--- ****break = break out of a loop entirealy
+---  ****continue = skip an iteration of a loop-->
+<!--DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>loops</h1>
+	<script type="text/javascript">
+		// for(let i=0;i<=10;i+=1){
+		// 	console.log(i)
+		// }
+		for (var i = 1; i<=200; i+=1) {
+			if(i==13){
+				break;
+			}
+			console.log(i)
+		}
+	</script>
+</body>
+</html>
+
+****nested loop= a loop inside of another loop-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>nested loop</h1>
+<label id="home"></label>
+<script type="text/javascript">
+	let symbol=window.prompt("enter a symbol to")
+	let rows=window.prompt("enter rows")
+	let columns=window.prompt("enter columus")
+	for(let i=1;i<=rows;i+=1){
+		for(let j=1;j<=columns;j+=1){
+			document.getElementById('home').innerHTML+=symbol;
+		}
+		document.getElementById('home').innerHTML+="<br>"
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ver,let,const</title>
+</head>
+<body>
+	<script type="text/javascript">
+							//--globsl scope variable
+		//var a=10;
+		//document.write(a);
+		let b=20;
+		//let b=30;			---redeclaration is not possible(worng)
+		b=30;				//--re intialization is possible
+		//document.write(b);
+
+		{
+			//let name=prompt('gana')//-----var and let is local scpoe
+			//document.write(name);//when declare the variable in blocks
+		//const is can't be change the valueonce  
+		}
+		const pi=3.14;
+		//console.log(pi)
+
+		/*var name="gana";
+		let roll_no="4n0";
+		const pin=9652;
+		console.log(name);
+		console.log(roll_no);
+		console.log(pin);
+		document.write(name+"<br>"+roll_no+"<br>"+pin);*/
+
+		let a=20;
+		b=30;
+		c=40;
+		document.write(a+"<br>"+b+"<br>"+c)
+	</script>
+</body>
+</html>

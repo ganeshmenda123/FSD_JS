@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+</head>
+<body>
+	<center>
+	
+
+		<table border="1" cellpadding="0" cellspacing="0" width="400"  style="background-color: whitesmoke;height: 200px;">
+			<tr>
+				<td colspan="4" style="height: 50px;text-align: right;" id="result_id"></td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			var tds=document.queryselectorAll("#table_id td");
+			for (var i = 0; i < tds.length; i++) {
+				tds[i].addEventListener("click",function(){
+					var val =this.innerText
+					if(val=='='){
+						getrs=document.getElementByID('result_id')
+					}
+				})
+			}
+		</script>
+	</center>
+</body>
+</html>

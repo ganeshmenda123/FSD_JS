@@ -1,0 +1,79 @@
+<!--DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	<!button onclick="click()">hide</button><br>
+	<p id="p">wertyuildc</p>
+	<button onclick="click1()">seek</button>
+	<script type="text/javascript">
+		function click(){
+			document.getElementById('p').style.display='block';
+		}
+		function click1(){
+			document.getElementById('p').style.display='none'
+		}
+	</script>
+	<button id="button">cilck me</button>
+	<script type="text/javascript">
+		let btn = document.getElementById('button');
+		btn.onclick=function(){
+			document.write("ganesh")
+		}
+	</script-->
+	<!--button id="btn">click  me</button>
+	<script type="text/javascript">
+		let btn1=document.getElementById('btn');
+		addEventListener("click",tast)
+		function tast(){
+			alert("testing.")
+		}
+	</script-->
+	<!--button onclick="nextslide()">incr by 1</button>
+	<button onclick="prevslide()">Decr by 1</button>
+	<p id="output">
+		<img src="i1.png" style="height: 200px;width: 200px;">
+	</p>
+	<script type="text/javascript">
+		let  i=0;
+		function incr(){
+			if (i<6){
+				var rse=++i;
+				document.getElementById('output').innerHTML="<img src='i"+rse+".png.'style='width:200px;hight:200px;'/>";
+			}
+		}
+		function decr(){
+			if (i>1){
+				var rse=--i
+				document.getElementById('output').innerText="<img src='i"+rse+".png.'style='width:200px;hight:200px;'/>"
+			}
+		}
+	</script-->
+	<center><h1>images</h1>
+		<img name="slide" style="height: 400px;width: 350px;">
+	</center>
+	<script type="text/javascript">
+		var i=0;
+		var images=[];
+		images[0]='i2.jpeg';
+		images[1]='i3.jpeg';
+		images[2]='i4.jpeg';
+		images[3]='i1.png'
+		function changeImg(){
+			document.slide.src=images[i];
+			if(i<images.length-1){
+				i++;
+
+			}else{
+				i=0;
+
+			}
+			setTimeout("changeImg()",1000);
+		}
+		window.onload=changeImg
+	</script>
+</body>
+</html>

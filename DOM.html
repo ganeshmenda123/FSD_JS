@@ -1,0 +1,110 @@
+<!--DOM Methods
+1.document.getElementById(Id name)
+2.document.getElementsByClassName(Class name)
+3.document.getElementsByTagName(Tag name)
+4.document.querySelectorAll
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+	<!--h1 id="dom">my name is gana</h1>
+	<h2 id="dom1"></h2>
+	<script type="text/javascript">
+		let a=document.getElementById('dom');
+		a.innerHTML='my name is ganesh';
+		a.innerSize='50px'
+		let b=document.getElementById('dom1');
+		b.innerText="gana";
+	</script-->
+
+
+	<!--img  id="img" src="i1.png">
+	<script type="text/javascript">
+		let a=document.getElementById('img').style.height="1000px".weight="500px";
+	</script-->
+
+
+	<!--input type="text" value="gana" id="a">
+	<p id="p">Please enter name</p>
+	<script type="text/javascript">
+		var ins=document.getElementById('a');
+		ins.value='nivas';
+		ins.style.border="1px solid red";
+		document.write("<br>");
+		var b=document.getElementById('p').style.color='red'.fontsize="30px";
+	</script-->
+
+	<!--h1>By class</h1>
+	<p class="p1">nivas</p>
+	<p class="p1">gana</p>
+	<p class="p1">veera</p>
+	<p class="p1">srinu</p>
+	<script type="text/javascript">
+		let a=document.getElementsByClassName('p1');
+		console.log(a);
+		a[3].innerHTML='sekhar'
+		a[0].innerText="my name is";
+		a[1].style.color='red';
+		a[2].style.fontSize="50px";
+	</script-->
+
+	<!--ul>
+		<li>aec</li>
+		<li>acet</li>
+		<li>ace</li>
+	</ul>
+	<script type="text/javascript">
+		var a=document.getElementsByTagName('li');
+		a[0].style.color='green';
+		a[1].style.fontSize="50px";
+	</script-->
+
+
+	<h1>Task</h1>
+	<table border="1" cellpadding="5px">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let a=document.getElementsByTagName('td');
+		console.log(a);
+		var k=a.length;
+		for (var i = 0; i < a.length; i++) {
+			a[i].innerText=k;
+			k--;
+		}
+
+	</script>
+	<!--h1>ganesh</h1>
+	<div>hyma</div>
+	<p>sekhar</p>
+	<script type="text/javascript">
+		const a=document.querySelectorAll("h1,div,p");
+		a.style.color='red';
+		for (let i = 0; i < a.length; i++) {
+			a[i].style.backgroungColor="red";
+		}
+	</script-->
+
+
+</body>
+</html>

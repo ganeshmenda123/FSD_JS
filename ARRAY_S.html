@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array|methods</title>
+</head>
+<body>
+<h1>Array methods</h1>
+<p id="array_id"></p>
+<script type="text/javascript">
+	let arr = ['ganesh','nivas','veera']
+	function a(array_method){
+		document.write(array_method)
+	}
+	a("input arr = "+arr+"<br>")
+	let arr2 = ["ganesh","nivas","veera"]
+	document.getElementById('array_id').innerHTML=arr2;
+	arr2.pop();
+	document.write("pop method= "+arr2+"<br>")
+	const arr3 = ["ganesh","nivas","veera"]
+	document.getElementById('array_id').innerHTML=arr3;
+	arr3.push("ganesh")
+	document.write("push method= "+arr3+"<br>")
+	const arr4 = ['ganesh','nivas','veera']
+	document.getElementById('array_id').innerHTML=arr4;
+	arr4.shift()
+	document.write("shift method= "+arr4+"<br>")
+	let arr5 = ["ganesh","nivas","veera"];
+	document.getElementById('array_id').innerHTML=arr5;
+	arr5.unshift("veera")
+	document.write("unshift method= "+arr5+"<br>")
+	let arr7 = ["ganesh","nivas","veera"]
+	const arr8 = arr7.slice(1)
+	document.getElementById('array_id').innerHTML=arr7;
+	document.write("arr of slice= "+arr8+"<br>")
+	let arr9 = ["ganesh", "nivas", "veera"];
+	document.getElementById('array_id').innerHTML=arr9;
+	arr9.sort()
+	document.write("sort= "+arr9+"<br>")
+	let arr10 = ["ganesh", "nivas", "veera"];
+	document.getElementById('array_id').innerHTML=arr10;
+	arr10.reverse()
+	document.write("reverse= "+arr10+"<br>")
+	let arr32 = ["ganesh", "nivas", "veera"];
+	document.getElementById('array_id').innerHTML=arr32;
+	arr32.fill("banana")
+	document.write("fill_method= "+arr32+"<br>")
+	let arr12= ["ganesh","nivas","veera"]
+	document.getElementById('array_id').innerHTML=arr12;
+	arr12.slice(1,0,"ganesh","nivas","veera")
+	document.write("array of slice= "+arr12+"<br>")
+	var num = [9, 16, 4, 25];
+	document.write(""+' Method .map()'+"","<br>")
+	document.write(""+' Method .indexOf()'+"","<br>")
+	document.write(num.indexOf(25),"<br>")
+	document.write(""+'9. Method .join()'+"","<br>")
+	document.write(num.join(),"<br>")
+	document.write(""+' Method .reduce()'+"","<br>")
+	document.write(num.reduce(myFunc),"<br>")
+		function myFunc(total, num) {
+ 			 return total + num;
+									}	
+	const newArr = num.map(Math.sqrt)
+	document.write(newArr,"<br>")
+	document.write(""+' Method .filter()'+"","<br>")
+	const result = num.filter(even);
+	function even(n) {
+  		return n%2==0;
+		}
+		document.write(result,"<br>")
+		document.write(""+' Method .some()'+"","<br>")
+		document.write(num.some(age),"<br>")
+	function age(age){
+		return age>18;}
+</script>
+</body>
+</html>

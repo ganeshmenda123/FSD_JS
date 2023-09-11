@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>constructor</title>
+</head>
+<body>
+	<!--script type="text/javascript">
+		class Student{
+			constructor(rno,fname,lname,clg){
+				this.rollno=rno;
+				this.name1=fname;
+				this.name2=lname;
+				this.college=clg;
+			}
+		}
+		let obj = new Student(12345,'ganesh','menda','ACET')
+		let obj1=new Student(87654,'shenkar','menda','mech')
+		document.write(obj.rollno+"<br>")
+		document.write(obj.name1+"<br>")
+		document.write(obj.name2+"<br>")
+		document.write(obj.college+"<br>")
+		document.write(obj1.rollno+"<br>"+obj1.name1+"<br>"+obj1.name2+"<br>"+obj1.college)
+	</script-->
+	<script type="text/javascript">
+		class call{
+			constructor(maths,phy,che,en){
+				this.mat=maths;
+				this.physics=phy;
+				this.chemistry=che;
+				this.english=en;
+				this.getfullname=function(){
+					return "<br>"+this.english+"<br>"+this.physics
+				}
+			}
+		}
+		let obj = new call(98,89,78,99)
+		document.write(obj.mat+"<br>"+obj.physics+"<br>"+obj.chemistry+"<br>"+obj.english)
+		document.write(obj.getfullname())
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Task</title>
+	<style type="text/css">
+		label{
+			margin-left: 20px;
+		}
+		.main{
+			margin-top: 30px;
+			display: flex;
+			justify-content: center;
+			
+		}
+		h1{
+			text-align: center;
+			font-size: 40px;
+			color:red;
+			font-style: s;
+		}
+		.input{
+			margin-top: 30px;
+			height: 30px;
+			width: 300px;
+			border: 2px solid black;
+			border-radius: 20px;
+		}
+		input{
+			cursor: pointer;
+			text-align: center;
+		}
+		p{
+			text-align: center;
+			margin-top: 50px;
+			font-size: 50px;
+			color: white;
+		}
+	</style>
+</head>
+<body style="background: skyblue;"><br>
+	<h1>Select Any Number</h1><br>
+<div class="main">
+	<form>
+		<label for="one">1</label>
+		<input type="radio" name="val" value="1" onclick="fun(this.value)">
+		<label for="two">2</label>
+		<input type="radio" name="val" value="2" onclick="fun(this.value)">
+		<label for="three">3</label>
+		<input type="radio" name="val" value="3" onclick="fun(this.value)">
+		<label for="four">4</label>
+		<input type="radio" name="val" value="4" onclick="fun(this.value)">
+		<label for="five">5</label>
+		<input type="radio"  name="val" value="5" onclick="fun(this.value)"><br><br><br>
+		<input type="text" id='user-input' class="input" style="color: red; font-size: 30px;">
+	</form><br><br>	
+</div>
+<script type="text/javascript">
+const random = Math.floor(Math.random() * 5) + 1
+console.log(random)
+	function fun(bro){
+	document.getElementById('user-input').value=random;
+	if (random == bro){
+		document.getElementById('para').textContent="You Won...!!"
+	}
+	else{
+		document.getElementById('para').textContent="You lose... Try Again!"
+	}	
+}
+</script>
+	  <p id="para"></p>
+</body>
+</html>

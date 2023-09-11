@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<!--center>
+	<select onchange="sample(this.value)">
+		<option>---select Branch---</option>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+		<option value="IT">IT</option>
+		<option value="EEE">EEE</option>
+		
+	</select>
+	<p id="p_id"></p>
+</center>
+<script type="text/javascript">
+	function sample(branch){
+		document.getElementById('p_id').innerText=branch
+	}
+	let x=+2+3+"6";
+	console.log(x)
+</script-->
+
+<!--form id="form_id">
+	My name:<input type="text" name=""> <br><br>
+	Roll_No:<input type="number" name=""> <br><br>
+	<select>
+		<option>---select Branch---</option>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+		<option value="IT">IT</option>
+		<option value="EEE">EEE</option>
+		
+	</select><br><br>
+	<input type="button" name="" onclick="sample()" value="Submit form">
+	<input type="button" name="" onclick="reset()" value="reset">
+</form>
+<script type="text/javascript">
+	function sample(){
+		document.getElementById('form_id').submit()
+	}
+	function reset(){
+		document.getElementById('reset').reset()
+	}
+</script-->
+<form id="form_id" onsubmit="return validateForm()">
+	First name:<input type="text" name="fname" id="fname"> <br><br>
+	Last name:<input type="number" name="lname" id="lname"> <br><br>
+	<select>
+		<option>---select Branch---</option>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+		<option value="IT">IT</option>
+		<option value="EEE">EEE</option>
+		
+	</select><br><br>
+	<input type="button" name="" onclick="sample()" value="Submit form">
+	<input type="button" name="" onclick="reset()" value="reset">
+</form>
+<script type="text/javascript">
+</script>
+</body>
+</html>

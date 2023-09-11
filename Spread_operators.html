@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>spread_operators</title>
+</head>
+<body>
+<h4>spread operators</h4>
+<p>it takes an iteration and expend or seperate each element</p>
+<p>Notation as ...(triple dots)</p>
+<script type="text/javascript">
+	let arr = [78,23 ,44 ,53];
+	//document.write(...arr);
+	console.log(2,3,...arr)
+	let arr1 = [1,2,3,4]
+	let arr2 = [9,8,7,6,5]
+	//let arr3=[...arr1,...arr2]
+	let arr3=[...arr1,12,23,23,...arr2,12,13]
+	console.log(arr3)
+
+	let str = ("ganesh");
+	console.log(...str)
+
+	function sum(a,b,c,d){
+		console.log(a+b+c+d)
+	}
+	let arr4=[10,20,30,40];
+	sum(...arr4)
+	function name(n1,n2,n3,n4){
+		console.log(n1+n2+n3+n4)
+	}
+	let arr5=['ganesh','nivas','srinu','veera']
+	name(...arr5)
+</script>
+</body>
+</html>

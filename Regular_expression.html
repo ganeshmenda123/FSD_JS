@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>regular_expression</title>
+</head>
+<body>
+	<h3>regular_expression</h3>
+<script type="text/javascript">
+	let er = /batch/;
+	let ouput = er.test("fullstack Batch")
+	if(ouput==true){
+		console.log("valid")
+	}else{
+		console.log("not a valid")
+	}
+	console.log(ouput)
+	let re = /batch/i;
+	let op = re.test("fullstack BATCH")
+	console.log(op)
+	let re1 = /^b/
+	//ouput1= re1.test("batch")
+	ouput1= re1.test("tbatch")
+	console.log(ouput1)
+	re2=/batch/g;
+	res = re2.exec("fullstack batch course batch");
+	console.log(res);
+	console.log(res.index)
+	res=re.exec("fullstack batch course batch")
+	//----regular expression
+	re3 = /^[0-9]{10}$/
+	ouput2= re3.test("965260936");
+	console.log(ouput2)
+	re4= /^[9][0-9]{9}$/
+	ouput3= re4.test("965260936");
+	console.log(ouput3)
+
+</script>
+</body>
+</html>

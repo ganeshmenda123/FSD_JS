@@ -1,0 +1,173 @@
+<!--//a variabli is a contanier for stroing data
+//a variable behavers as if it was the value that it containes
+two steps:
+1.declaration(var,let,const) 
+2.assignment(= assignment operator)-->
+
+
+<!--example 1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS introduction</title>
+</head>
+<body>
+	<h1>javascript</h1>
+	<script type="text/javascript">
+		var name = 'name';(string)
+		document.write(name.length);
+		document.write("<br>")
+		name += 'Gana';
+		document.write(name.length); 
+	</script>
+</body>
+</html>
+
+< example 2-->
+
+<!--DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var name = 'ganesh';
+		name += ' nivas'
+		name += '&veera'
+		document.write(name)
+	</script>
+</body>
+</html>
+
+
+1 alert
+
+<example 3>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title></title>
+ </head>
+ <body>
+ 	<script type="text/javascript">
+ 		var s ='frontend dop';
+ 		var a = 4;(number)
+ 		var b = 3;
+ 		//alert(s);
+ 		//document.write(a);
+ 		//console.log(b);
+ 		var a = 4;
+ 		//document.write(typeof(a)+"<br>");
+ 		var b = 'ganesh';
+ 		//document.write(typeof(b)+"<br>");
+ 		var gender = true;
+ 		//document.write(typeof(gender)+"<br>");
+ 		var arr =[4,'ganesh',5];
+ 		//console.log(arr);
+ 		//alert(arr);
+ 		//document.write(arr[1]);
+ 		//document.write(typeof(arr)+"<br>");
+ 		var trainee ={
+ 			'name': 'ganesh',
+ 			'Roll_no':'4n0',
+ 			'college':'ACET',
+ 			'Branch':'ECE'
+ 		}
+ 		document.write(trainee.name +"<br>")
+ 		document.write(trainee.Roll_no +"<br>")
+ 		document.write(trainee.college +"<br>")
+ 		document.write(trainee.Branch)
+ 	</script>
+ </body>
+ </html-->
+
+ <!--DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title></title>
+ </head>
+ <body>
+ 	 <script type="text/javascript">
+ 	  var trainees =[{
+ 	  		'name': 'ganesh',
+ 			'Roll_no':'4n0',
+ 			'college':'ACET',
+ 			'Branch':'ECE'
+ 	  },
+ 	  {		
+ 	  		'name': 'nivas',
+ 			'Roll_no':'4o5',
+ 			'college':'AEC',
+ 			'Branch':'ECE'
+ 	  }]; 
+ 	  //document.write(trainees[0].name+"<br>")
+ 	  //document.write(trainees[0].Roll_no +"<br>")
+ 	  //document.write(trainees[0].college +"<br>")
+ 	  //document.write(trainees[0].Branch +"<br>");
+
+ 	  for(var i=0; i<trainees.length; i++) {
+ 	  	document.write((i+1)+". "+trainees[i].name +" "+ trainees[i].Roll_no +" "+ trainees[i].college +" "+trainees[i].Branch)
+ 	  }
+ 	</script>
+ </body>
+ </html-->
+ <!--DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>task</title>
+ </head>
+ <body>
+ 	<button type="button" onclick="document.write(5 + 6)">Try it</button>
+ </body>
+ </html-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>task</title>
+ </head>
+ <body>
+ 	<script type="text/javascript">
+ 		var trainees =[{
+ 	  		name: 'ganesh',
+ 			Roll_no:'4n0',
+ 			college:'ACET',
+ 			Branch:'ECE'
+ 	  },
+ 	  {		
+ 	  		name: 'nivas',
+ 			Roll_no:'4o5',
+ 			College:'AEC',
+ 			Branch:'ECE'
+ 	  }
+ 	  ,{		
+ 	  		name: 'veera',
+ 			Roll_no:'4k5',
+ 			College:'AEC',
+ 			Branch:'ECE'
+ 	  }];
+ 	 	for (var i = 0; i <trainees.length; i++) {
+ 	 		document.write(i+1+".")
+ 	 		for (key in trainees[i]){
+ 	 			document.write(" "+trainees[i][key]+" ")
+ 	 		}
+ 	 		document.write("<br>")
+ 	 	}
+ 	  //for(var i=0; i<trainees.length; i++) {
+ 	  	//document.write((i+1)+". "+trainees[i].name +" "+ trainees[i].Roll_no +" "+ trainees[i].college +" "+trainees[i].Branch)
+ 	</script>
+ </body>
+ </html>

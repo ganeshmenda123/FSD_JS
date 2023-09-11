@@ -1,0 +1,3 @@
+.countlable{
+	text-align:center;
+}
